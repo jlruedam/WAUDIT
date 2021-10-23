@@ -1,0 +1,44 @@
+
+{% extends "index.html" %}
+
+{% load static %}
+
+{% block content %}
+   
+    
+    {% include "barraUniversoAudit.html" %}
+    <p>
+        Modulo de Creación del Universo de Auditoría:<br/> 
+
+    </p>
+    <table border="1" cellspacing="">
+        <tr>
+            <th>Código</th>
+            <!--<th>Gestión Responsable</th>
+            <th>Proceso</th>
+            <th>Macroproceso</th>-->
+            <th>Auditoría general</th>
+            <th>Nombre Auditoría</th>
+            <th>Actividad</th>
+            <!--<th>Riesgos</th>-->
+            <th>Alias</th>
+            <th>Causas</th>
+        </tr>
+        {% for a in dataAuditoriaU %}
+        <tr>
+            <td>{{a.codigo}}</td>
+            <!--<td>{{a.responsableProceso}}</td>
+            <td>{{a.proceso}}</td>
+            <td>{{a.macroproceso}}</td>-->
+            <td>{{a.auditoriaGeneral}}</td>
+            <td>{{a.nombreAuditoria}}</td>
+            <td>{{a.actividadAuditoria}}</td>
+            <!--<td>{{a.riesgosAuditoria}}</td>-->
+
+        </tr> 
+        {% endfor %} 
+    </table>
+
+    
+{% endblock %}
+
