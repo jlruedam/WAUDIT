@@ -11,12 +11,6 @@ class AuditoriaUniverso(models.Model):
     actividadAuditoria=models.CharField(max_length=150)
     riesgosAuditoria=models.CharField(max_length=150,null=True)
     
-    
-"""  
-class MacroprocesosUniverso(models.Model):
-    macroproceso=models.CharField(max_length=100)
-    
-"""  
 class GestionResponsableUniverso(models.Model):
     responsable=models.CharField(max_length=100)
     
