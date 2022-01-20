@@ -10,4 +10,4 @@ urlpatterns = [
     path('GestionAuditoria/',views.GestionAuditoria, name='GestionAuditoria'),
     path('CrearAuditoria/',views.CrearAuditoria, name='CrearAuditoria'),
     path('EditarAuditoria/',views.EditarAuditoria, name='EditarAuditoria'),
-]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
